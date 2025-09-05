@@ -60,7 +60,6 @@ public class Vetor {
         return -1;
     }
 
-    // EXERCÍCIO 01: Busca binária pelo valor informado
     public int buscaBinaria(int valor) {
         int inicio = 0;
         int fim = this.tamanho - 1;
@@ -80,7 +79,6 @@ public class Vetor {
         return -1; 
     }
 
-    // EXERCÍCIO 01: Inserir no início do vetor
     public void inserirNoInicio(Integer valor) {
         if (this.tamanho == this.capacidade) {
             aumentarCapacidade();
