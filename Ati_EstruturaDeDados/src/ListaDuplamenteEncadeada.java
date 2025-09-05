@@ -1,12 +1,8 @@
 public class ListaDuplamenteEncadeada {
-    private No inicio;
-    private No fim;
-    private int tamanho;
-
-    private class No {
-        Integer valor;
-        No anterior;
-        No proximo;
+    public class No {
+        public Integer valor;
+        public No anterior;
+        public No proximo;
 
         public No(Integer valor) {
             this.valor = valor;
@@ -15,13 +11,17 @@ public class ListaDuplamenteEncadeada {
         }
     }
 
+    public No inicio;
+    public No fim;
+    public int tamanho;
+
     public ListaDuplamenteEncadeada() {
         this.inicio = null;
         this.fim = null;
         this.tamanho = 0;
     }
 
-    // EXERCÍCIO 02: Inserir no final da lista
+
     public void inserirNoFinal(Integer valor) {
         No novoNo = new No(valor);
         
@@ -79,6 +79,7 @@ public class ListaDuplamenteEncadeada {
         System.out.println("]");
     }
 
+   
     public void imprimirReverso() {
         No atual = this.fim;
         System.out.print("[");
